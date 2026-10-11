@@ -8,7 +8,7 @@
 (function () {
   "use strict";
 
-  var MEASUREMENT_ID = "REPLACE_WITH_GA4_MEASUREMENT_ID";
+  var MEASUREMENT_ID = "G-GKKCV0Z8EB";
 
   if (!/^G-[A-Z0-9]{6,12}$/.test(MEASUREMENT_ID)) return;
 
