@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex">
+<!-- アプリが入っている人が Safari で直接開いたとき（Universal Link は働かない）のために、Smart App Banner を置く。
+     App Store の ID は 6818946345。app-argument は共有ページ内の script が今の URL で上書きする。 -->
+<meta name="apple-itunes-app" content="app-id=6818946345">
+<title>わたしのバリスタ ー 共有されたレシピ</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <p class="brand">わたしのバリスタ</p>
+  <h1 id="name">レシピを確かめています…</h1>
+  <p id="summary" class="muted"></p>
+  <p id="error" class="error" role="alert" hidden></p>
+  <dl id="values" hidden>
+    <div><dt>豆の量</dt><dd id="dose"></dd></div>
+    <div><dt id="waterLabel">湯の合計</dt><dd id="water"></dd></div>
+    <div><dt>湯温</dt><dd id="temp"></dd></div>
+    <div><dt>挽き目</dt><dd id="grind"></dd></div>
+  </dl>
+  <ol id="steps" hidden></ol>
+  <p id="bean" class="muted" hidden></p>
+  <p class="muted">このページは、リンクの中身をこの端末の中だけで表示します。データはどこにも送られません。</p>
+  <p><a id="store" class="button" href="https://apps.apple.com/app/id6818946345">App Store でアプリを入手する</a></p>
+</main>
+<script src="share-core.js"></script>
+<script src="share.js"></script>
+</body>
+</html>

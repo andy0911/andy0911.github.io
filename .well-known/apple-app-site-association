@@ -1,0 +1,12 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["377M4Z6S57.jp.andygrave.coffee"],
+        "components": [
+          { "/": "/r", "#": "v1.*", "comment": "共有レシピのリンク（https://andy0911.github.io/r#v1.…）だけをアプリに渡す" }
+        ]
+      }
+    ]
+  }
+}

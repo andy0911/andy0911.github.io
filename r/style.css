@@ -1,0 +1,15 @@
+:root { color-scheme: light dark; --ink: #1d1a17; --bg: #faf7f2; --muted: #6b645c; --line: #ddd5c9; --accent: #1d1a17; --on: #faf7f2; }
+@media (prefers-color-scheme: dark) { :root { --ink: #f1ebe2; --bg: #1c1a18; --muted: #a39b90; --line: #3a3631; --accent: #f1ebe2; --on: #1c1a18; } }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 -apple-system, "Hiragino Sans", sans-serif; }
+main { max-width: 32rem; margin: 0 auto; padding: 1.5rem 1.25rem 3rem; }
+.brand { font-size: .85rem; letter-spacing: .08em; color: var(--muted); margin: 0; }
+h1 { font-family: ui-serif, "Hiragino Mincho ProN", serif; font-size: 1.6rem; margin: .25rem 0 .25rem; overflow-wrap: anywhere; }
+.muted { color: var(--muted); font-size: .9rem; }
+.error { color: #b3261e; font-weight: 600; }
+dl { display: grid; grid-template-columns: 1fr 1fr; gap: .75rem; margin: 1.25rem 0; }
+dl div { border: 1px solid var(--line); border-radius: .5rem; padding: .5rem .75rem; }
+dt { font-size: .8rem; color: var(--muted); } dd { margin: 0; font-size: 1.25rem; font-variant-numeric: tabular-nums; }
+ol { list-style: none; padding: 0; margin: 0 0 1rem; border: 1px solid var(--line); border-radius: .5rem; }
+ol li { display: flex; justify-content: space-between; padding: .6rem .75rem; border-top: 1px solid var(--line); }
+ol li:first-child { border-top: 0; }
+.button { display: inline-block; background: var(--accent); color: var(--on); text-decoration: none; padding: .75rem 1.25rem; border-radius: .5rem; font-weight: 600; }
